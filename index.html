@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GoThru - Lista HTML para Tour Virtual 360º</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body style="background-color: #aaa;">
+
+	<main class="container bg-white rounded-4 p-5 my-5">
+		<header class="mb-5">
+			<h1 class="fs-3 fw-bold border-2 border-bottom pb-2 mb-4" style="color: #333;">Lista HTML para GoThru</h1>
+			<p class="fst-italic text-secondary">Para gerar a marcação HTML, preencha os campos abaixo conforme sua respectiva categoria. Para imagens, copie o endereço de onde a imagem está hospedada e cole no campo destinado a ela.</p>
+		</header>
+
+		<section>
+			<form id="code-form">
+				<ul class="p-0" id="form-list"></ul>
+				<button id="generate-btn" class="btn btn-primary">Gerar código</button>
+				<button id="add-row-btn" class="btn btn-outline-primary">Adicionar campos</button>
+				<button id="clear-row-btn" class="btn btn-outline-secondary">Limpar campos</button>
+			</form>
+		</section>
+
+		<!-- code generated -->
+		<section class="mt-5 p-4 rounded-2" style="background-color: #eee;">
+			<p id="code-generated"></p>
+			<button id="copy-code-btn" class="btn btn-sm btn-secondary mt-2">Copiar código</button>
+			<button id="clear-code-btn" class="btn btn-sm btn-outline-secondary mt-2">Limpar código</button>
+		</section>
+	</main>
+
+	<script src="script.js"></script>
+	
+</body>
+</html>
